@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import withReveal from "react-reveal/withReveal";
+import {FaFacebookSquare} from 'react-icons/fa';
 
 export const StyledSideContactContainer = withReveal(
   styled.div`
@@ -30,3 +31,8 @@ export const StyledMailPhone = styled.span`
   margin-left: 3px;
   cursor: pointer;
 `;
+export const StyledFacebookLogo =styled(FaFacebookSquare)`
+  color: #3982E4;
+  width: 30px;
+  height: 30px;
+`

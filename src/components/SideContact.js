@@ -6,7 +6,11 @@ import {
   StyledBottomContactAddress,
   StyledMailPhone,
   StyledSideContactCompanyName,
+  StyledFacebookLogo
 } from "./styles/SideContact";
+
+import {Link} from "react-router-dom";
+
 
 const SideContact = () => {
   return (
@@ -33,6 +37,9 @@ const SideContact = () => {
             tel. <StyledMailPhone>+48 570 030 700</StyledMailPhone>
           </StyledSideContactAddress>
         </StyledBottomContactAddress>
+        <StyledSideContactAddress>
+        <a href="https://www.facebook.com/Active-Mind-Psychoterapia-CBT-Magdalena-Musia%C5%82-703300393425454" rel="noopener" target="_blank" ><StyledFacebookLogo /></a>
+        </StyledSideContactAddress>
       </StyledSideContactContainer>
     </>
   );
