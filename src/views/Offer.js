@@ -25,7 +25,7 @@ const Offer = () => {
     <StyledSectionContainer id="terapia">
       <StyledHeaderWrapper>
         <StyledHeader>W czym pomagam?</StyledHeader>
-        <StyledUnderline></StyledUnderline>
+        <StyledUnderline/>
       </StyledHeaderWrapper>
       <StyledIconsContainer>
         {offer.map((offer) => {
@@ -38,7 +38,7 @@ const Offer = () => {
                 onClick={(e) => showOfferDetails(e)}
                 isCollapsed={showDesc}
               />
-              <img src={img} style={{ backgroundColor: "white" }} />
+              <img src={img} alt={showDesc} style={{ backgroundColor: "white" }} />
             </StyledIconsWrapper>
           );
         })}

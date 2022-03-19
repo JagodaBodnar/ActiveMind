@@ -1,9 +1,8 @@
 import React, { useContext, useRef } from "react";
 import { StyledInfo, StyledBackdrop, StyledClose, StyledContent } from "./styles/ModalStyles";
-import { StyledImg } from "../views/styles/AboutStyles";
 import RootContext from "../context/context";
-import certificate from "../assets/images/certificate.jpg"
 import {info} from "../data/therapyinfo";
+import Certificates from "./Certificates";
 
 const Modal = () => {
   const context = useContext(RootContext);
@@ -14,7 +13,7 @@ const Modal = () => {
           case "1":
               return <div>{info}</div>
           case "2":
-              return <StyledImg src={certificate} alt="certificate" />
+              return <Certificates />
           default:
               return <div>{info}</div>
       }

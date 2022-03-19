@@ -9,7 +9,6 @@ import {
   StyledFacebookLogo
 } from "./styles/SideContact";
 
-import {Link} from "react-router-dom";
 
 
 const SideContact = () => {

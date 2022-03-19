@@ -16,9 +16,9 @@ export const review = [
   },
     {
       id: 3,
-      author: "I.P",
+      author: "Jagoda",
       review:
-      "Świetna, przemiła, z wielkim zaangażowaniem i zrozumieniem. Atmosfera podczas wizyty bardzo ciepła i przyjazna.",
+      "Znalezienie dobrego terapeuty nie należy do najłatwiejszych zadań. Zanim trafiłam do Pani Magdy miałam już wcześniej kilku terapeutów, ale tak na prawdę żaden z nich nie był w stanie mi pomóc. To spowodowało powstanie wielu uprzedzeń i utratę wiary, że jeszcze będziej lepiej. Dzięki Pani Magdzie ta wiara powoli powraca. Na terapię uczęszczam dopiero od pół roku, ale już dostrzegam pewne zmiany u siebie i moi bliscy również je dostrzegają. Jestem świadoma, że przede mną jeszcze długa droga, ale na dzień dzisiejszy mogę wymienić parę rzeczy, które jak dla mnie wyróżniają ją na tle innych terapeutów z którymi miałam okazję współpracować. Przede wszystkim trafna diagnoza, której nie potrafili postawić psychiatrzy oraz psychoterapeuci wcześniej. Duże zaangażowanie i praca z powołania a nie z konieczności. Określony plan działania co dla mnie było też niezwykle ważne. Powyższe przykłady stanowią podstawę mojej oceny i rekomendacji tego terapeuty innym.",
     },
 ]
 

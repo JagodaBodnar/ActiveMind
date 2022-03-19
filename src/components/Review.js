@@ -6,13 +6,14 @@ import "./styles/owl-carousel.css";
 import { review } from "../data/review";
 import styled from 'styled-components'
 const StyledAuthorSpace =styled.div`
-margin-top: 10px;
+  margin-top: 10px;
 `
+
 
 const Review = () => {
   const options = {
     loop: true,
-    margin: 8,
+    margin: 2,
     autoplay: true,
     autoplayHoverPause: true,
     dots: false,
@@ -31,12 +32,13 @@ const Review = () => {
     <OwlCarousel {...options} className="owl-theme">
       {review.map((item) => {
         return (
-          <div className="item" key={item.id}>
+          <div className="item" key={item.id} >
             <div className="item-content">{item.review}</div>
-            <StyledAuthorSpace className="item-content">- {item.author} -</StyledAuthorSpace>
+            <StyledAuthorSpace className="item-content" >- {item.author} -</StyledAuthorSpace>
           </div>
         );
       })}
+
     </OwlCarousel>
   );
 };

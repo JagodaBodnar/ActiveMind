@@ -10,6 +10,7 @@ export const StyledPriceContainer = withReveal(
     grid-column-gap: 50px;
     color: ${({ theme }) => theme.textColor};
     text-align: justify;
+    justify-content: center;
   `,
   <Fade bottom />
 );
@@ -27,4 +28,7 @@ export const StyledPrice = styled.div`
   min-height: 50px;
   margin: 30px 5px;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `;

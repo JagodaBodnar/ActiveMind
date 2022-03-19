@@ -14,7 +14,7 @@ export const StyledSideContactContainer = withReveal(
 export const StyledSideContactHeader = styled.h3`
   text-transform: uppercase;
 `;
-export const StyledSideContactCompanyName = styled.h3`
+export const StyledSideContactCompanyName = styled.h4`
   color: #888;
   font-weight: 400;
 `;

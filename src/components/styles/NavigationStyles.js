@@ -14,7 +14,7 @@ export const StyledNavigationContainer = styled.div`
   background-color: ${({ navbarColor, theme }) =>
     navbarColor ? theme.white : "transparent"};
   width: 100%;
-  z-index: 9999;
+  z-index: 10;
 `;
 export const StyledNavigationList = styled.ul`
   margin-right: 5%;

@@ -53,14 +53,17 @@ export const StyledList = styled.ul`
   top: 80px;
   width: inherit;
   text-align: center;
-  background-color: #bcb9b2;
-  z-index: 10;
+  background-color: #A9B0B1;
+  z-index: 1;
 `;
 
 export const StyledNavigationLinks = styled(Link)`
   text-decoration: none;
-  color: ${({ $navbarColor, theme }) => $navbarColor ? theme.white : 'red'};
+  color: ${({  theme }) =>  theme.white};
   border-bottom: ${({ theme }) => `1px solid ${theme.mobileMenuBorder}`};
   text-align: center;
   cursor: pointer;
+  &:hover{
+    color: ${({  theme }) =>  theme.textColor};
+  }
 `;

@@ -54,10 +54,7 @@ export const StyledContainer = withReveal(
   `,
   <Fade right />
 );
-export const StyledLogo = styled.img`
-  width: 100px;
-  margin: 20px 0;
-`;
+
 export const StyledCompanyName = styled.h1`
   display: flex;
   flex-direction: column;
@@ -66,28 +63,31 @@ export const StyledCompanyName = styled.h1`
   font-weight: 400;
   margin-bottom: 50px;
   color: ${({ theme }) => theme.white};
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 10%;
   text-align: center;
   @media ${device.tablet} {
     margin-bottom: 10%;
+    font-size: 35px;
   }
 `;
 export const StyledCompanySubName = styled.span`
   text-align: center;
   color: ${({ theme }) => theme.white};
-  font-size: 20px;
+  font-size: 16px;
   @media ${device.tablet} {
     font-size: 1.5rem;
+    font-size: 20px;
   }
 `;
 export const StyledCompanySubInfo = styled.h3`
-  font-size: 20px;
+  font-size: 16px;
   color: ${({ theme }) => theme.textColor};
   text-align: center;
   font-weight: 500;
   margin-bottom: 10%;
   @media ${device.tablet} {
+    font-size: 20px;
     font-size: 1.4rem;
     margin-bottom: 50px;
   }

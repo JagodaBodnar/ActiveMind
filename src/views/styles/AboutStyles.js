@@ -23,6 +23,7 @@ export const StyledHeaderWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  text-align: center;
 `;
 export const StyledAboutUs = withReveal(
     styled.div`
@@ -33,7 +34,7 @@ export const StyledAboutUs = withReveal(
     `,
     <Fade bottom/>
 );
-export const StyledLink = styled.span`
+export const StyledLink = styled.a`
   color: ${({theme}) => theme.mainBlue};
   cursor: pointer;
 `;

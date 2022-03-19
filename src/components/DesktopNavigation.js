@@ -17,7 +17,7 @@ const DesktopNavigation = ({ navbarColor }) => {
       <StyledLogoContainer>
         <StyledLogoImg src={logo} alt="Magdalena Musiał" />
         <StyledLogoName navbarColor={navbarColor}>
-            Active Mind Psychoterapia CBT Magdalena Musiał
+            Active Mind
         </StyledLogoName>
       </StyledLogoContainer>
       <StyledNavigationList>
