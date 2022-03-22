@@ -37,6 +37,7 @@ export const StyledAboutUs = withReveal(
 export const StyledLink = styled.a`
   color: ${({theme}) => theme.mainBlue};
   cursor: pointer;
+  align-self: flex-end;
 `;
 export const StyledAboutMeContent = styled.div`
   display: flex;

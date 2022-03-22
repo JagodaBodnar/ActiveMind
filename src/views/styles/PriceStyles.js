@@ -5,22 +5,23 @@ import Fade from "react-reveal/Fade";
 
 export const StyledPriceContainer = withReveal(
   styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 50px;
+    grid-column-gap: 200px;
     color: ${({ theme }) => theme.textColor};
-    text-align: justify;
-    justify-content: center;
   `,
   <Fade bottom />
 );
 
+export const StyledPriceWrapper =styled.div`
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ 
+`
 export const StyledPriceDesc = styled.div`
   min-height: 40px;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  justify-content: space-around;
+  align-items: flex-start;
   margin: 30px 5px;
 `;
 

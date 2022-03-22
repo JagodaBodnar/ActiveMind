@@ -8,12 +8,12 @@ export const StyledInfo = styled.div`
   top: 20%;
   z-index: 10;
   color: black;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 50px;
   width: 100%;
   max-height: 300px;
   flex-direction: column;
-  border: 5px solid #128195;
+  border: 5px solid #272727;
   border-radius: 5px;
   @media ${device.tablet} {
     width: 50%;

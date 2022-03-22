@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import {BrowserRouter} from "react-router-dom";
 import MainTemplate from "./templates/MainTemplate";
 import RootContext from "./context/context";
-// import { offers } from "./data/offers";
 import {useCookies} from "react-cookie";
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
     const [navbarColor, setNavbarColor] = useState(false);
     const [modalOpen, setModalOpen] = useState(false);
     const [modalValue, setModalValue] = useState('');
-    // const [offer, setOffer] = useState(offer);
     const [cookies, setCookie] = useCookies(["user"]);
     const [cookieAccepted, setCookieAccepted] = useState(
         getCookieFromLocalStorage
@@ -79,7 +77,7 @@ const App = () => {
                     setModalOpen,
                     closeModal,
                     modalValue,
-                    setModalValue
+                    setModalValue,
                 }}
             >
                 <MainTemplate/>

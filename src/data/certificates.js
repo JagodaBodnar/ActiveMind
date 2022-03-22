@@ -10,6 +10,8 @@ import certificate5 from '../assets/images/certificate5.jpg'
 import thumbnail5 from '../assets/images/thumbnail5.jpg'
 import certificate6 from '../assets/images/certificate6.jpg'
 import thumbnail6 from '../assets/images/thumbnail6.jpg'
+import certificate7 from '../assets/images/certificate7.JPG'
+import thumbnail7 from '../assets/images/thumbnail7.jpg'
 
 export const certificates = [
     {
@@ -41,5 +43,10 @@ export const certificates = [
         src: certificate6,
         thumbnail: thumbnail6,
         caption: "Terapia dzieci z autyzmem certyfikat nr 2733/2019",
+    },
+    {
+        src: certificate7,
+        thumbnail: thumbnail7,
+        caption: "Behavioural and cognitive therapies",
     },
 ];

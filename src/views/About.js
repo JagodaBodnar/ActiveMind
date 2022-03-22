@@ -11,7 +11,6 @@ import {
 import {StyledHeader} from "./styles/CommonStyles";
 import RootContext from "../context/context";
 import photo from '../assets/images/MMfoto.png'
-import Certificates from "../components/Certificates";
 
 
 const About = () => {
@@ -39,7 +38,7 @@ const About = () => {
                         skuteczność w leczeniu większości zaburzeń. Nieustannie podnoszę swoje &nbsp;
                         <StyledLink onClick={() => openModal('2')}>kwalifikacje </StyledLink> poprzez uczestnictwo w
                         szkoleniach, konferencjach naukowych i kursach dotyczących psychoterapii. Swoją pracę
-                        terapeutyczną poddaję regularnej superrewizji pod kierunkiem certyfikowanego superwizora CBT
+                        terapeutyczną poddaję regularnej superwizji pod kierunkiem certyfikowanego superwizora CBT
                         . Doświadczenie z zakresu diagnostyki psychologicznej, poradnictwa i
                         psychoterapii zdobywałam w Szpitalu Neuropsychiatrycznym im. Prof.
                         Mieczysława Kaczyńskiego przy ulicy Abramowickiej w Lublinie, zarówno

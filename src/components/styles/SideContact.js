@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import withReveal from "react-reveal/withReveal";
 import {FaFacebookSquare} from 'react-icons/fa';
+import {IoLocationSharp} from 'react-icons/io5'
 
 export const StyledSideContactContainer = withReveal(
   styled.div`
@@ -33,6 +34,11 @@ export const StyledMailPhone = styled.span`
 `;
 export const StyledFacebookLogo =styled(FaFacebookSquare)`
   color: #3982E4;
+  width: 30px;
+  height: 30px;
+`
+export const StyledLocationLogo =styled(IoLocationSharp)`
+  color: #be1b0c;
   width: 30px;
   height: 30px;
 `

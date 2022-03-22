@@ -7,10 +7,14 @@ import { device } from "../../globalStyles/Device";
 export const StyledIconsContainer = withReveal(
   styled.div`
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 55px;
-    @media ${device.mobileS} {
-      grid-template-columns: repeat(2, 1fr);
+    @media ${device.tablet} {
+      grid-template-columns: repeat(4, 1fr);
+      grid-row-gap: 20px;
+    } ;
+    @media ${device.desktop} {
+      grid-template-columns: repeat(7, 1fr);
       grid-row-gap: 20px;
     } ;
   `,

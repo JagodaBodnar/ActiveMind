@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { device } from "../../globalStyles/Device";
-import { Form, Field } from "formik";
+
 import Fade from "react-reveal/Fade";
 import withReveal from "react-reveal/withReveal";
 
 export const StyledForm = withReveal(
-  styled(Form)`
+  styled.form`
     width: 100%;
     margin: 80px auto;
     display: flex;
@@ -56,11 +56,11 @@ export const StyledErrorTextArea = styled(StyledError)`
   left: 10px;
 `;
 export const StyledErrorCheckbox = styled(StyledError)`
-  top: 120%;
+  top: 110%;
   left: 10px;
 `;
 
-export const StyledField = styled(Field)`
+export const StyledField = styled.input`
   margin: 10px;
   width: 100%;
   border: none;
@@ -79,25 +79,30 @@ export const StyledTextArea = styled(StyledField)`
   padding-bottom: 50px;
   resize: none;
 `;
+export const StyledCheckboxWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  position:relative;
+`;
 export const StyledFieldCheckbox = styled(StyledField)`
   width: 20px;
   margin: 0 10px;
+  grid-column: span 1;
   @media ${device.mobileS} {
     width: 30px;
   }
 `;
-export const StyledCheckboxWrapper = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
-`;
 
-export const StyledPrivacyPolicy = styled.span`
-  color: ${({ theme }) => theme.mainBlue};
+export const StyledPrivacyPolicy = styled.label`
   margin-left: 3px;
   cursor: pointer;
+  grid-column: span 4;
+  display: flex;
+  font-size: 12px;
 `;
 
 export const StyledButtonWrapper = styled.div`

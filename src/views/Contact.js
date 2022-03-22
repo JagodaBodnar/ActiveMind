@@ -14,7 +14,10 @@ import {
   StyledIntroContainer,
 } from "./styles/ContactStyles";
 
+
 const Contact = () => {
+
+
   return (
     <>
       <StyledSectionContainer id="kontakt">

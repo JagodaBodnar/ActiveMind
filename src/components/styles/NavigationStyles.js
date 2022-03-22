@@ -27,7 +27,7 @@ export const StyledLogoContainer = styled.div`
 `;
 
 export const StyledLogoImg = styled.img`
-  width: 70px;
+  width: 100px;
 `;
 export const StyledLogoName = styled.h3`
   color: ${({ navbarColor, theme }) =>

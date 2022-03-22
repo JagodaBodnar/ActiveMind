@@ -12,6 +12,8 @@ import styled from "styled-components";
 import CookiesInformation from "../components/CookiesInformation";
 import RootContext from "../context/context";
 import PriceList from "../views/PriceList";
+import Footer from "../views/Footer";
+
 const StyledContentContainer = styled.div`
   overflow: hidden;
 `;
@@ -31,6 +33,7 @@ const MainTemplate = () => {
           <PriceList />
           <Reviews />
           <Contact />
+          <Footer />
           {cookieAccepted ? "" : <CookiesInformation />}
         </StyledContentContainer>
       </ThemeProvider>
