@@ -34,3 +34,10 @@ export const StyledCompanyAddressWrapper = styled.div`
 export const StyledFormWrapper = styled.div`
   flex: 2;
 `;
+export const StyledSendInformation = styled.div`
+  width: 60%;
+  min-height: 30px;
+  margin: 20px auto;
+  text-align: center;
+  color: ${({ theme }) => theme.mainBlue};
+`;

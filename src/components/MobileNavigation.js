@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import logo from "../assets/icons/logo4.png";
+import logo from "../assets/icons/logo.png";
+import logo1 from "../assets/icons/logo1.png";
 import { navigation } from "../data/navigationLinks";
 import { v4 as uuidv4 } from "uuid";
 import RootContext from "../context/context";
@@ -23,7 +24,7 @@ const MobileNavigation = () => {
   return (
     <StyledNavigationContent>
       <StyledLogoContainer>
-        <StyledLogoImg src={logo} alt="Magdalena Musiał" />
+        <StyledLogoImg src={navbarColor ? logo : logo1} alt="Magdalena Musiał" />
         <StyledLogoName navbarColor={navbarColor}>
             Active Mind
         </StyledLogoName>

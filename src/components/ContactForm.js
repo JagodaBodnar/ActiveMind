@@ -19,9 +19,12 @@ import {
 import {useForm, Controller} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import emailjs from '@emailjs/browser';
+import RootContext from "../context/context";
 
 
 const ContactForm = () => {
+    const context = useContext(RootContext);
+    const { sendInformation } = context;
     const formValidationSchema = Yup.object().shape({
         name: Yup.string().required("Proszę o podanie imienia i nazwiska."),
         email: Yup.string()
@@ -52,6 +55,7 @@ const ContactForm = () => {
                 }
             );
         reset();
+        sendInformation()
     };
     const {
         control,

@@ -22,6 +22,7 @@ const App = () => {
     const [navbarColor, setNavbarColor] = useState(false);
     const [modalOpen, setModalOpen] = useState(false);
     const [modalValue, setModalValue] = useState('');
+    const [sent, setSent] = useState(false)
     const [cookies, setCookie] = useCookies(["user"]);
     const [cookieAccepted, setCookieAccepted] = useState(
         getCookieFromLocalStorage
@@ -61,7 +62,12 @@ const App = () => {
     const closeModal = () => {
         setModalOpen(false);
     };
-
+    const sendInformation = () => {
+        setSent(true);
+        setTimeout(() => {
+            setSent(false);
+        }, 3000);
+    };
     return (
         <BrowserRouter>
             <RootContext.Provider
@@ -78,6 +84,8 @@ const App = () => {
                     closeModal,
                     modalValue,
                     setModalValue,
+                    sent,
+                    sendInformation
                 }}
             >
                 <MainTemplate/>

@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../assets/icons/logo3.png";
+import logo from "../assets/icons/logo.png";
+import logo1 from "../assets/icons/logo1.png";
 import { navigation } from "../data/navigationLinks";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -15,7 +16,7 @@ const DesktopNavigation = ({ navbarColor }) => {
   return (
     <>
       <StyledLogoContainer>
-        <StyledLogoImg src={logo} alt="Magdalena Musiał" />
+        <StyledLogoImg src={navbarColor ? logo : logo1} alt="Magdalena Musiał" />
         <StyledLogoName navbarColor={navbarColor}>
             Active Mind
         </StyledLogoName>
