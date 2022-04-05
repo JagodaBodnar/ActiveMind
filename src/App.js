@@ -23,7 +23,7 @@ const App = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [modalValue, setModalValue] = useState('');
     const [sent, setSent] = useState(false)
-    const [cookies, setCookie] = useCookies(["user"]);
+    const [cookie, setCookie] = useCookies(["user"]);
     const [cookieAccepted, setCookieAccepted] = useState(
         getCookieFromLocalStorage
     );
@@ -34,7 +34,6 @@ const App = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
     useEffect(() => {
         const checkScrollTop = () => {
             if (!displayButton && window.pageYOffset > 600) {
@@ -46,8 +45,10 @@ const App = () => {
                 setDisplayButton(false);
             }
         };
-        window.addEventListener("scroll", checkScrollTop);
-    }, []);
+        window.addEventListener("mousemove", checkScrollTop)
+        window.addEventListener("scroll", checkScrollTop)
+    })
+
 
     const handleCookie = () => {
         setCookie("user", "gowtham", {

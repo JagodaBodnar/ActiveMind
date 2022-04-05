@@ -28,7 +28,7 @@ export const StyledInputContainer = styled.div`
 `;
 export const StyledError = styled.div`
   font-size: 13px;
-  color: #931536;
+  color: ${({ theme }) => theme.formError};
   border-radius: 3px;
   padding: 2px;
   position: absolute;

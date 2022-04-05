@@ -38,16 +38,15 @@ const About = () => {
                         skuteczność w leczeniu większości zaburzeń. Nieustannie podnoszę swoje &nbsp;
                         <StyledLink onClick={() => openModal('2')}>kwalifikacje </StyledLink> poprzez uczestnictwo w
                         szkoleniach, konferencjach naukowych i kursach dotyczących psychoterapii. Swoją pracę
-                        terapeutyczną poddaję regularnej superwizji pod kierunkiem certyfikowanego superwizora CBT
-                        . Doświadczenie z zakresu diagnostyki psychologicznej, poradnictwa i
+                        terapeutyczną poddaję regularnej superwizji pod kierunkiem certyfikowanego superwizora CBT.
+                        Doświadczenie z zakresu diagnostyki psychologicznej, poradnictwa i
                         psychoterapii zdobywałam w Szpitalu Neuropsychiatrycznym im. Prof.
                         Mieczysława Kaczyńskiego przy ulicy Abramowickiej w Lublinie, zarówno
                         na oddziale dziennym jak i oddziale całodobowym. Posiadam kwalifikacje
                         z zakresu pedagogiki uprawniające do pracy z osobami ze spektrum
                         autyzmu w tym z Zespołem Aspergera. Współpracuję z zespołem
                         doświadczonych lekarzy psychiatrów, seksuologów, psychologów i
-                        psychoterapeutów. Prowadzę praktykę własną – Gabinet REH4U w Trzebnicy
-                        oraz we Wrocławiu Active Mind Psychoterapia CBT Magdalena Musiał. Jestem członkiem
+                        psychoterapeutów. Prowadzę praktykę własną w Trzebnicy oraz we Wrocławiu Active Mind Psychoterapia CBT Magdalena Musiał. Jestem członkiem
                         Polskiego Towarzystwa Terapii Poznawczo-Behawioralnej."
                     </StyledAboutUs>
                 </StyledAboutMeContent>

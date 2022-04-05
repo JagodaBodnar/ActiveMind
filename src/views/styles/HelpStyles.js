@@ -42,15 +42,6 @@ export const StyledOfferIcon = styled.button`
   &:hover {
     border: ${({ theme }) => `2px solid ${theme.iconsBackground}`};
   }
-  /* ${({ isCollapsed }) =>
-    isCollapsed &&
-    css`
-      border: ${({ theme }) => `2px solid ${theme.iconsActiveBackground}`};
-      background-color: ${({ theme }) => theme.iconsActiveBackground};
-      &:hover {
-        border: ${({ theme }) => `2px solid ${theme.iconsActiveBackground}`};
-      }
-    `} */
 `;
 
 export const StyledDetailsWrapper = withReveal(

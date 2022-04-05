@@ -20,16 +20,16 @@ export const StyledNavigationList = styled.ul`
   margin-right: 5%;
 `;
 
-export const StyledLogoContainer = styled.div`
+export const StyledContainer = styled.div`
   margin-left: 5%;
   display: flex;
   align-items: center;
 `;
 
-export const StyledLogoImg = styled.img`
+export const StyledDandelionImg = styled.img`
   width: 100px;
 `;
-export const StyledLogoName = styled.h3`
+export const StyledCompanyName = styled.h3`
   color: ${({ navbarColor, theme }) =>
     navbarColor ? theme.textColor : theme.white};
   font-weight: 300;
@@ -52,7 +52,6 @@ export const StyledButton = styled(Link)`
   right: 3%;
   transition: 0.7s;
   visibility: hidden;
-  background-color: ${({ theme }) => theme.mainBlue};
   width: 30px;
   height: 30px;
   display: flex;

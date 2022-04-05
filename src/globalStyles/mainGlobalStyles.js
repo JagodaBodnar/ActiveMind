@@ -1,18 +1,25 @@
 export const mainGlobalStyles = {
-  white: "#fff",
-  textColor: "#292929",
-  iconsBackground: "#96bec0",
+    //mobile navigation //
+    mobileMenuBorder: "#ddd",
+    mobileMenuBackground: "#fff",
+    mobileMenuTextColor: "#292929",
+    //form styles//
+    formError: "#931536",
+    inputBorder: "#ddd",
+    secondaryTextColor: "#888",
+    blueIcon: "#3982E4",
+    redIcon: "#be1b0c",
+    green: "#73AF55",
 
-  mainBlue: "#128195",
-  brightBlue: "#BBF1FA",
-  iconsBorder: "#ddd",
-  inputBorder: "#ddd",
+    //general colors //
+    white: "#fff",
+    textColor: "#292929",
+    mainBlue: "#128195",
 
-  // iconsActiveBackground: "#C9A99C",
-  mobileMenuBlue: "#E6D0B6",
-  mobileMenuBorder: "#ddd",
-  sectionHeader: "#191a1c",
-  sectionDarkBackground: "#f7f7f7",
-  whiteTransparent: "rgba(255, 255, 255, 0.9)",
-  blueTransparent: "rgba(190, 220, 250, 0.9)",
+    //sections//
+    sectionDarkBackground: "#f7f7f7",
+    sectionHeader: "#191a1c",
+    iconsBackground: "#96bec0",
+    brightBlue: "#BBF1FA",
+    iconsBorder: "#ddd",
 };

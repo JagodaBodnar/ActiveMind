@@ -16,11 +16,11 @@ export const StyledSideContactHeader = styled.h3`
   text-transform: uppercase;
 `;
 export const StyledSideContactCompanyName = styled.h4`
-  color: #888;
+  color: ${({theme})=>theme.secondaryTextColor};
   font-weight: 400;
 `;
 export const StyledSideContactAddress = styled.p`
-  color: #888;
+  color: ${({theme})=>theme.secondaryTextColor};
   font-weight: 300;
 `;
 
@@ -28,17 +28,17 @@ export const StyledBottomContactAddress = styled.div`
   margin-top: 30px;
 `;
 export const StyledMailPhone = styled.span`
-  color: #128195;
+  color: ${({theme})=>theme.mainBlue};
   margin-left: 3px;
   cursor: pointer;
 `;
 export const StyledFacebookLogo =styled(FaFacebookSquare)`
-  color: #3982E4;
+  color: ${({theme})=>theme.blueIcon};
   width: 30px;
   height: 30px;
 `
 export const StyledLocationLogo =styled(IoLocationSharp)`
-  color: #be1b0c;
+  color: ${({theme})=>theme.redIcon};
   width: 30px;
   height: 30px;
 `

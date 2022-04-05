@@ -11,7 +11,7 @@ export const StyledSpan = styled.span`
     navbarColor ? theme.textColor : theme.white};
   border-radius: 3px;
   z-index: 1;
-  transform-origin: 4px 0px;
+  transform-origin: 4px 0;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     opacity 0.55s ease;
 `;
@@ -20,7 +20,6 @@ export const StyledHamburger = styled.button`
   outline: none;
   border: none;
   background-color: transparent;
-  z-index: 1;
   margin: 5px 20px 0 0;
   cursor: pointer;
   z-index: 1000;
@@ -53,13 +52,13 @@ export const StyledList = styled.ul`
   top: 80px;
   width: inherit;
   text-align: center;
-  background-color: #A9B0B1;
+  background-color: ${({ theme }) =>theme.mobileMenuBackground};
   z-index: 1;
 `;
 
 export const StyledNavigationLinks = styled(Link)`
   text-decoration: none;
-  color: ${({  theme }) =>  theme.white};
+  color: ${({  theme }) =>  theme.textColor};
   border-bottom: ${({ theme }) => `1px solid ${theme.mobileMenuBorder}`};
   text-align: center;
   cursor: pointer;

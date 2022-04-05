@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import { device } from "../../globalStyles/Device";
 
 export const StyledIntroContainer = styled.div`
@@ -39,5 +39,39 @@ export const StyledSendInformation = styled.div`
   min-height: 30px;
   margin: 20px auto;
   text-align: center;
-  color: ${({ theme }) => theme.mainBlue};
+  font-size: 20px;
+  color: ${({ theme }) => theme.green};
+  position: relative;
 `;
+export const StyledCheckMarkDraw = styled.svg`
+  width: 100px;
+  display: block;
+  margin: 10px auto 0;
+`
+const dash = keyframes`
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+  `
+export const StyledCircle = styled.circle`
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: ${dash} .9s ease-in-out;
+`
+const dashCheck = keyframes`
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  `
+export const StyledPolyline = styled.polyline`
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -100;
+  animation: ${dashCheck} .9s .35s ease-in-out forwards;
+ 
+`

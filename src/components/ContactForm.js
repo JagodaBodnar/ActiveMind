@@ -159,7 +159,7 @@ const ContactForm = () => {
                             />
                         )}
                     />
-                    <StyledPrivacyPolicy htmlFor="acceptTerms">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żadania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Active Mind.</StyledPrivacyPolicy>
+                    <StyledPrivacyPolicy htmlFor="acceptTerms">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Active Mind.</StyledPrivacyPolicy>
                     <StyledErrorCheckbox>{errors.checkbox?.message}</StyledErrorCheckbox>
                 </StyledCheckboxWrapper>
                 <StyledButtonWrapper>

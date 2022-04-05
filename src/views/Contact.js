@@ -12,10 +12,11 @@ import {
     StyledCompanyAddressWrapper,
     StyledFormWrapper,
     StyledIntroContainer,
+    StyledCheckMarkDraw,
+    StyledSendInformation,
+    StyledCircle,
+    StyledPolyline
 } from "./styles/ContactStyles";
-import {
-    StyledSendInformation
-} from './styles/ContactStyles'
 import RootContext from "../context/context";
 
 
@@ -27,7 +28,7 @@ const Contact = () => {
             <StyledSectionContainer id="kontakt">
                 <StyledHeaderWrapper>
                     <StyledHeader>Kontakt</StyledHeader>
-                    <StyledUnderline></StyledUnderline>
+                    <StyledUnderline/>
                 </StyledHeaderWrapper>
                 <StyledIntroContainer>
                     Masz pytania, chcesz rozpocząć współpracę? Czekam na Twój kontakt!
@@ -35,7 +36,14 @@ const Contact = () => {
                 </StyledIntroContainer>
                 {sent ? (
                     <StyledSendInformation>
-                       Wiadomość została wysłana.
+                        <StyledCheckMarkDraw version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                            <StyledCircle  fill="none" stroke="#73AF55" stroke-width="6"
+                                    stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                            <StyledPolyline  fill="none" stroke="#73AF55" stroke-width="6"
+                                      stroke-linecap="round" stroke-miterlimit="10"
+                                      points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                        </StyledCheckMarkDraw>
+                        Wiadomość została wysłana.
                     </StyledSendInformation>
                 ) : (
                     <StyledSendInformation/>
